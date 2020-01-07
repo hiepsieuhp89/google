@@ -8,6 +8,13 @@
         	margin-left: 0px;
         	padding-right: 0px;
         	margin-right: 0px;
+        	transition: opacity 700ms;
+			background-image: url("./pink-sky-mountains-scenery-uhdpaper.com-4K-4.2331.jpg");
+			background-size: cover;
+			background-position: 0px -72px;
+			background-attachment: fixed;
+			background-position: fixed;
+			background-repeat: no-repeat;
         }
         .account{
 			position: absolute;
@@ -91,21 +98,7 @@
 		    a{
 			text-decoration: none;
 			color: black;
-		    }
-			body{
-				transition: opacity 700ms;
-				background-image: url("./pink-sky-mountains-scenery-uhdpaper.com-4K-4.2331.jpg");
-				background-size: cover;
-				background-position: 0px -72px;
-				background-attachment: fixed;
-				background-position: fixed;
-				background-repeat: no-repeat;
-			}
-			@media only screen and (max-width: 1500px) {
-				body{
-					background-position: 0px;
-				}
-			}				
+		    }							
 			.button{
 				width: 50px;
 				height: 50px;
@@ -161,16 +154,6 @@
 				position: relative;
 				margin-left: 0px;
 				margin-top: 1%;
-			}
-			@media only screen and (max-width: 1385px) and (min-width: 720px){
-                .bgimg{
-                	top: -75px;
-                }
-			}
-			@media only screen and (max-width: 479px){
-                #iconapp{
-                	height: calc(105px * 4);
-                }
 			}
 			#search{
 				margin-left: 10%;
@@ -277,9 +260,9 @@
 
  .bgimg{
  	margin-top: 0px;
- 	margin-left: 35%;
+ 	margin-left: 0px;
  	text-align: center;
- 	width: 30%;
+ 	width: 100vw;
  	margin-bottom: -2000px;
  	position: relative;
     align-items: center;
@@ -332,7 +315,7 @@
   visibility: hidden;
   position: absolute;
   top:40%;
-  left:26%;
+  left:28%;
   color: white;
   font-size: calc(30vw / 3.5);
   display: inline-block;
@@ -430,4 +413,35 @@ p {
             filter: url("#squiggly-4");
   }
 }
-
+@media only screen and (max-width: 900px){
+	                #osu{
+	                	position: relative;
+	                	top: 2010px;
+	                	left: 26vw;
+	                	width: 48vw;
+	                }
+	                #osu:hover{
+	                	left: 22.5vw;
+		                width: 55%;
+		                }
+	                .footer{
+		             	font-size: 2vw;
+	                }
+	             	#date{
+	             		bottom: 4vw;
+		             	font-size: 2vw;
+	             	}
+	             	.test {
+					    font-size: 16vw;
+					}
+		        }
+		        @media only screen and (max-width: 479px){
+                #iconapp{
+                	height: calc(105px * 4);
+                }
+			}
+			@media only screen and (max-width: 1500px) {
+				body{
+					background-position: 0px;
+				}
+			}
