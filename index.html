@@ -1,261 +1,260 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" type="image/png" href="./favicon.png">
-        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-        <title>Google</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-	<div class="account" onClick="showmenu();">
-	<button id="accountbutton" name="GoogleAccount">
-		<img id="avaimg" src="https://i.imgur.com/ljXfF9u.jpg" alt="" width="100%" height="100%">
-    </button>
-	</div>
-	<div class="accmenu">
-		<div id="general_info">
-		<img id="avaimg_inbox" src="https://i.imgur.com/ljXfF9u.jpg" alt="" width="20%" height="20%">
-		<div id="account_name"></div>
-		<div id="account_mail"></div></div>
-		<div id="account_manage">
-			<div id="button_manageaccount">
-				<a class="Y_account" title="Your account" href="https://myaccount.google.com/?utm_source=OGB&tab=rk&utm_medium=act" target="_parent">
-				Manage your Google account
-		        </a>
-		    </div>
-		</div>
-		<div id="sign_out">
-			<div id="signout_button">
-				<a class="sign_out_link" title="sign out" href="https://accounts.google.com/Logout?hl=en&continue=https://www.google.com%3Fhl%3Den-US&timeStmp=1573736299&secTok=.AG5fkS_DEnws7Zk7py63pOUKXb9qsA3Q8w">
-				Sign out
-				</a>
-			</div>
-		</div>
-	</div>
-<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"> 
-</script>
-<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
-<script language="javascript"></script>
-<script src="jquery-3.4.1.js"></script>
-<script src="backend.js"></script>
-    <div id="search" onClick="hidemenu();">
-	   <div><a title="Google" href="https://www.google.com/">
-	   	<div class="test2" contenteditable>
-  					<p class="small" id="g1">g<p/>
-  						<p class="small" id="o">o<p/>
-  							<p class="small" id="o2">o<p/>
-  								<p class="small" id="g2">g<p/>
-  									<p class="small" id="l">l<p/>
-  										<p class="small" id="e">e<p/>
-		</div>
-	    </a>
-		</div>
-		<div id="formbox">
-     <form method="get" action="http://www.google.com.vn/search" target="_parent">
-     <input type="search" name="q" size="25" maxlength="255" placeholder="Khai sáng tâm hồn" autocomplete="on" autofocus>
-	</form>
-		</div>
-		<div id="clear"><hr size="1px" color="#FF33D7" align="left"></div>
-		<div id="iconapp">
-                <div id="nettruyen" class="app_icon_list">
-				   	<a class="applist" title="Nettruyen" href="http://www.nettruyen.com/" target="_blank">
-				   	<div class="background">
-					<button class="button" name="nettrn">
-					<img src="https://i.imgur.com/xjEYNCw.png" alt="" width="100%" height="100%">
-					</button>
-				    </div>
-					</a>
-			    </div>
-
-				<div id="facebook" class="app_icon_list">
-					<a class="applist" title="Facebook" href="https://www.facebook.com/" target="_blank">
-					<div class="background">
-					<button class="button" name="face">
-					<img src="https://i.imgur.com/464IKp5.png" alt="" width="100%" height="100%">
-					</button>
-					</div>
-					</a>
-				</div>
-				<div id="youtube" class="app_icon_list">
-					<a class="applist" title="Youtube" href="https://www.youtube.com/" target="_blank">
-					<div class="background">
-					<button class="button" name="youtube">
-					<img src="https://i.imgur.com/2p5eVal.png" alt="" width="100%" height="100%">
-					</button>
-				    </div>
-					</a>
-				</div>
-				<div id="googletrans" class="app_icon_list">
-					<a class="applist" title="GG translate" href="https://translate.google.com/" target="_blank">
-					<div class="background">
-					<button class="button" name="trans">
-					<img src="https://i.imgur.com/2TzJRGm.png" alt="" width="100%" height="100%">
-					</button>
-				    </div>
-					</a>
-				</div>
-				<div id="gmail" class="app_icon_list">
-					<a class="applist" title="Gmail" href="https://mail.google.com/mail/?tab=rm&ogbl" target="_blank">
-					<div class="background">
-					<button class="button" name="gmail">
-					<img src="https://i.imgur.com/XKgDuV0.png" alt="" width="100%" height="100%">
-					</button>
-				    </div>
-					</a>
-				</div>
-				<div id="drive" class="app_icon_list">
-					<a class="applist" title="Google Drive" href="https://drive.google.com/drive/my-drive" target="_blank">
-					<div class="background">
-					<button class="button" name="drive">
-					<img src="https://i.imgur.com/eAWCLjW.png" alt="" width="100%" height="100%">
-					</button>
-				    </div>
-					</a>
-				</div>
-				<div id="Google Photos" class="app_icon_list">
-					<a class="applist" title="Google Photos" href="https://photos.google.com/?tab=oq&pageId=none" target="_blank">
-					<div class="background">
-					<button class="button" name="photos">
-					<img src="https://i.imgur.com/FZRZv2y.png" alt="" width="100%" height="100%">
-					</button>
-				    </div>
-					</a>
-				</div>
-				<div id="Vuighe" class="app_icon_list">
-					<a class="applist" title="Vuighe.net" href="https://vuighe.net/" target="_blank">
-					<div class="background">
-					<button class="button" name="vuighe">
-					<img src="https://i.imgur.com/rLAvwOT.png" alt="" width="100%" height="100%">
-					</button>
-				    </div>
-					</a>
-				</div>
-				<div id="HaUI" class="app_icon_list">
-					<a class="applist" title="HaUI" href="https://sv.dhcnhn.vn/" target="_blank">
-					<div class="background">
-					<button class="button" name="haui">
-					<img src="https://i.imgur.com/lFGfwih.png" alt="" width="100%">
-					</button>
-				    </div>
-					</a>
-				</div>
-				<div id="Spotify" class="app_icon_list">
-					<a class="applist" title="Spotify" href="https://open.spotify.com/" target="_blank">
-					<div class="background">
-					<button class="button" name="Spotify">
-					<img src="https://i.imgur.com/xUTpoLe.png" alt="" width="100%" height="100%">
-					</button>
-				    </div>
-					</a>
-				</div>
-				<div id="HowKteam" class="app_icon_list">
-					<a class="applist" title="HowKteam" href="https://www.howkteam.vn/" target="_blank">
-					<div class="background">
-					<button class="button" name="HowKteam">
-					<img src="https://i.imgur.com/eAHtnZJ.png" alt="" width="100%" height="100%">
-					</button>
-				    </div>
-					</a>
-				</div>
-				<div id="Mangarock" class="app_icon_list">
-					<a class="applist" title="Mangarock" href="https://mangarock.com/" target="_blank">
-					<div class="background">
-					<button class="button" name="Mangarock">
-					<img src="https://i.imgur.com/Dhjj2nR.png" alt="" width="100%" height="100%">
-					</button>
-				    </div>
-					</a>
-				</div>
-			
-			</div>
-	</div>
-	<div class="bgimg">
-
-        <div class="container">
-            <div class="row">
-                <div class="test3" contenteditable>
-  					<p class="small">sắp tết 2020<p/>
-				</div>           
+   <head>
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" type="image/png" href="./favicon.png">
+      <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+      <title>Google</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"> </script>
+      <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+      <script language="javascript"></script>
+      <script src="jquery-3.4.1.js"></script>
+      <script src="times.js"></script>
+      <div class="account" onClick="showmenu();">
+         <button id="accountbutton" name="GoogleAccount">
+         <img id="avaimg" src="https://i.imgur.com/ljXfF9u.jpg" alt="" width="100%" height="100%">
+         </button>
+      </div>
+      <div class="accmenu">
+         <div id="general_info">
+            <img id="avaimg_inbox" src="https://i.imgur.com/ljXfF9u.jpg" alt="" width="20%" height="20%">
+            <div id="account_name"></div>
+            <div id="account_mail"></div>
+         </div>
+         <div id="account_manage">
+            <div id="button_manageaccount">
+               <a class="Y_account" title="Your account" href="https://myaccount.google.com/?utm_source=OGB&tab=rk&utm_medium=act" target="_parent">
+               Manage your Google account
+               </a>
             </div>
-
+         </div>
+         <div id="sign_out">
+            <div id="signout_button">
+               <a class="sign_out_link" title="sign out" href="https://accounts.google.com/Logout?hl=en&continue=https://www.google.com%3Fhl%3Den-US&timeStmp=1573736299&secTok=.AG5fkS_DEnws7Zk7py63pOUKXb9qsA3Q8w">
+               Sign out
+               </a>
+            </div>
+         </div>
+      </div>
+      <div id="search" onClick="hidemenu();">
+         <div>
+            <a title="Google" href="https://www.google.com/">
+               <div class="test2" contenteditable>
+                  <p class="small" id="g1">g
+                  <p/>
+                  <p class="small" id="o">o
+                  <p/>
+                  <p class="small" id="o2">o
+                  <p/>
+                  <p class="small" id="g2">g
+                  <p/>
+                  <p class="small" id="l">l
+                  <p/>
+                  <p class="small" id="e">e
+                  <p/>
+               </div>
+            </a>
+         </div>
+         <div id="formbox">
+            <form method="get" action="http://www.google.com.vn/search" target="_parent">
+               <input type="search" name="q" size="25" maxlength="255" placeholder="Khai sáng tâm hồn" autocomplete="on" autofocus>
+            </form>
+         </div>
+         <div id="clear">
+            <hr size="1px" color="#FF33D7" align="left">
+         </div>
+         <div id="iconapp">
+            <div id="nettruyen" class="app_icon_list">
+               <a class="applist" title="Nettruyen" href="http://www.nettruyen.com/" target="_blank">
+                  <div class="background">
+                     <button class="button" name="nettrn">
+                     <img src="https://i.imgur.com/xjEYNCw.png" alt="" width="100%" height="100%">
+                     </button>
+                  </div>
+               </a>
+            </div>
+            <div id="facebook" class="app_icon_list">
+               <a class="applist" title="Facebook" href="https://www.facebook.com/" target="_blank">
+                  <div class="background">
+                     <button class="button" name="face">
+                     <img src="https://i.imgur.com/464IKp5.png" alt="" width="100%" height="100%">
+                     </button>
+                  </div>
+               </a>
+            </div>
+            <div id="youtube" class="app_icon_list">
+               <a class="applist" title="Youtube" href="https://www.youtube.com/" target="_blank">
+                  <div class="background">
+                     <button class="button" name="youtube">
+                     <img src="https://i.imgur.com/2p5eVal.png" alt="" width="100%" height="100%">
+                     </button>
+                  </div>
+               </a>
+            </div>
+            <div id="googletrans" class="app_icon_list">
+               <a class="applist" title="GG translate" href="https://translate.google.com/" target="_blank">
+                  <div class="background">
+                     <button class="button" name="trans">
+                     <img src="https://i.imgur.com/2TzJRGm.png" alt="" width="100%" height="100%">
+                     </button>
+                  </div>
+               </a>
+            </div>
+            <div id="gmail" class="app_icon_list">
+               <a class="applist" title="Gmail" href="https://mail.google.com/mail/?tab=rm&ogbl" target="_blank">
+                  <div class="background">
+                     <button class="button" name="gmail">
+                     <img src="https://i.imgur.com/XKgDuV0.png" alt="" width="100%" height="100%">
+                     </button>
+                  </div>
+               </a>
+            </div>
+            <div id="drive" class="app_icon_list">
+               <a class="applist" title="Google Drive" href="https://drive.google.com/drive/my-drive" target="_blank">
+                  <div class="background">
+                     <button class="button" name="drive">
+                     <img src="https://i.imgur.com/eAWCLjW.png" alt="" width="100%" height="100%">
+                     </button>
+                  </div>
+               </a>
+            </div>
+            <div id="Google Photos" class="app_icon_list">
+               <a class="applist" title="Google Photos" href="https://photos.google.com/?tab=oq&pageId=none" target="_blank">
+                  <div class="background">
+                     <button class="button" name="photos">
+                     <img src="https://i.imgur.com/FZRZv2y.png" alt="" width="100%" height="100%">
+                     </button>
+                  </div>
+               </a>
+            </div>
+            <div id="Vuighe" class="app_icon_list">
+               <a class="applist" title="Vuighe.net" href="https://vuighe.net/" target="_blank">
+                  <div class="background">
+                     <button class="button" name="vuighe">
+                     <img src="https://i.imgur.com/rLAvwOT.png" alt="" width="100%" height="100%">
+                     </button>
+                  </div>
+               </a>
+            </div>
+            <div id="HaUI" class="app_icon_list">
+               <a class="applist" title="HaUI" href="https://sv.dhcnhn.vn/" target="_blank">
+                  <div class="background">
+                     <button class="button" name="haui">
+                     <img src="https://i.imgur.com/lFGfwih.png" alt="" width="100%">
+                     </button>
+                  </div>
+               </a>
+            </div>
+            <div id="Spotify" class="app_icon_list">
+               <a class="applist" title="Spotify" href="https://open.spotify.com/" target="_blank">
+                  <div class="background">
+                     <button class="button" name="Spotify">
+                     <img src="https://i.imgur.com/xUTpoLe.png" alt="" width="100%" height="100%">
+                     </button>
+                  </div>
+               </a>
+            </div>
+            <div id="HowKteam" class="app_icon_list">
+               <a class="applist" title="HowKteam" href="https://www.howkteam.vn/" target="_blank">
+                  <div class="background">
+                     <button class="button" name="HowKteam">
+                     <img src="https://i.imgur.com/eAHtnZJ.png" alt="" width="100%" height="100%">
+                     </button>
+                  </div>
+               </a>
+            </div>
+            <div id="Mangarock" class="app_icon_list">
+               <a class="applist" title="Mangarock" href="https://mangarock.com/" target="_blank">
+                  <div class="background">
+                     <button class="button" name="Mangarock">
+                     <img src="https://i.imgur.com/Dhjj2nR.png" alt="" width="100%" height="100%">
+                     </button>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="bgimg">
+         <div class="container">
             <div class="row">
-                <div class="col-md-2">
-                    <div class="item">
-                        <div class="number" id="ngay">36</div>
-                        <div class="title">Ngày</div>
-                    </div>
-                </div>
-
-                <div class="col-md-2  ">
-                    <div class="item">
-                        <div class="number" id="gio">30</div>
-                        <div class="title">Giờ</div>
-                    </div>
-                </div>
-
-                <div class="col-md-2  ">
-                    <div class="item">
-                        <div class="number" id="phut">21</div>
-                        <div class="title">Phút</div>
-                    </div>
-                </div>
-
-                <div class="col-md-2  ">
-                    <div class="item">
-                        <div class="number" id="giay">25</div>
-                        <div class="title">Giây</div>
-                    </div>
-                </div>
+               <div class="test3" contenteditable>
+                  <p class="small">sắp tết 2020
+                  <p/>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-2">
+                  <div class="item">
+                     <div class="number" id="ngay">36</div>
+                     <div class="title">Ngày</div>
+                  </div>
+               </div>
+               <div class="col-md-2  ">
+                  <div class="item">
+                     <div class="number" id="gio">30</div>
+                     <div class="title">Giờ</div>
+                  </div>
+               </div>
+               <div class="col-md-2  ">
+                  <div class="item">
+                     <div class="number" id="phut">21</div>
+                     <div class="title">Phút</div>
+                  </div>
+               </div>
+               <div class="col-md-2  ">
+                  <div class="item">
+                     <div class="number" id="giay">25</div>
+                     <div class="title">Giây</div>
+                  </div>
+               </div>
             </div>
             <div class="text-center">
-                <p class="slogan">Tết đến nơi trong túi không có 1 ngàn</p>
+               <p class="slogan">Tết đến nơi trong túi không có 1 ngàn</p>
             </div>
-        </div>
-    </div>
-	<div id="osu">
-		<a id="osu_cover" href="https://osu.ppy.sh/home" target="_blank">
-			<img class="osu_icon" id="front_icon" src="https://osu.ppy.sh/images/layout/osu-logo-white.svg" alt="">
-			<img class="osu_icon" id="back_icon" src="https://osu.ppy.sh/images/layout/osu-logo-triangles.svg" alt="">
-			<video id="osu_video" autoplay loop muted playsinline src="landing.mp4"></video>
-		    	<div class="test" contenteditable>
-  					<p class="small">game wibu<p/>
-				</div>
-	   	</a>
-	</div>
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <defs>
-
-    
-    <filter id="squiggly-0">
-      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
-      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
-    </filter>
-    <filter id="squiggly-1">
-      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
-<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
-    </filter>
-    
-    <filter id="squiggly-2">
-      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
-<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
-    </filter>
-    <filter id="squiggly-3">
-      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
-<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
-    </filter>
-    
-    <filter id="squiggly-4">
-      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
-<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
-    </filter>
-  </defs> 
-</svg>   
-<div id="date">wait</div>
-<div class="footer">
-	        
-			<a id="cre" title="Xuân Tùng" href="https://www.facebook.com/CXTBB" target="_blank">Cre: Xuan Tung</a>
-    </div>   
-    </body>
+         </div>
+      </div>
+      <div id="osu">
+         <a id="osu_cover" href="https://osu.ppy.sh/home" target="_blank">
+            <img class="osu_icon" id="front_icon" src="https://osu.ppy.sh/images/layout/osu-logo-white.svg" alt="">
+            <img class="osu_icon" id="back_icon" src="https://osu.ppy.sh/images/layout/osu-logo-triangles.svg" alt="">
+            <video id="osu_video" autoplay loop muted playsinline src="landing.mp4"></video>
+            <div class="test" contenteditable>
+               <p class="small">game wibu
+               <p/>
+            </div>
+         </a>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+         <defs>
+            <filter id="squiggly-0">
+               <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+               <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+            </filter>
+            <filter id="squiggly-1">
+               <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+               <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+            </filter>
+            <filter id="squiggly-2">
+               <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+               <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+            </filter>
+            <filter id="squiggly-3">
+               <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+               <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+            </filter>
+            <filter id="squiggly-4">
+               <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+               <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+            </filter>
+         </defs>
+      </svg>
+      <div id="date">wait</div>
+      <div class="footer">
+         <a id="cre" title="Xuân Tùng" href="https://www.facebook.com/CXTBB" target="_blank">Cre: Xuan Tung</a>
+      </div>
+   </body>
 </html>
