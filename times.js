@@ -1,16 +1,17 @@
+$(".accmenu").hide();
+$('#account_name').text('Xuân Tùng');
+$('#account_mail').text('tungcan2000@gmail.com');
 
-		  $(".accmenu").hide();
-		  $('#account_name').text('Xuân Tùng');
-		  $('#account_mail').text('tungcan2000@gmail.com');
-		function showmenu(){
-		  $(".accmenu").toggle();
-		}
-		function hidemenu(){
-		  $(".accmenu").hide();
-		}
+function showmenu() {
+  $(".accmenu").toggle();
+}
+
+function hidemenu() {
+  $(".accmenu").hide();
+}
 var countDownDate = new Date("Jan 25, 2020 0:0:0").getTime();
 // Update the count down every 1 second
-var countdownfunction = setInterval(function() {
+var countdownfunction = setInterval(function () {
   // Get todays date and time
   var now = new Date().getTime();
   // Find the distance between now an the count down date
@@ -25,7 +26,7 @@ var countdownfunction = setInterval(function() {
   document.getElementById("phut").innerHTML = minutes;
   document.getElementById("giay").innerHTML = seconds;
   var date = new Date();
-  var data = date.getDate()+'/'+(date.getMonth()+1)+'/'+date.getFullYear()+' - '+date.getHours()+':'+date.getMinutes()+':'+date.getSeconds() ;
+  var data = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + ' - ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
   document.getElementById("date").innerHTML = data;
   // If the count down is over, write some text
   if (distance < 0) {
