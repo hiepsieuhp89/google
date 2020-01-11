@@ -2,18 +2,14 @@
 <html>
    <head>
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="respond.css">
       <link rel="shortcut icon" type="image/png" href="./favicon.png">
       <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
       <title>Google</title>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
    </head>
    <body>
-      <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"> </script>
-      <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
-      <script language="javascript"></script>
-      <script src="jquery-3.4.1.js"></script>
-      <script src="time.js"></script>
       <div class="account" onClick="showmenu();">
          <button id="accountbutton" name="GoogleAccount">
          <img id="avaimg" src="https://i.imgur.com/ljXfF9u.jpg" alt="" width="100%" height="100%">
@@ -40,6 +36,11 @@
             </div>
          </div>
       </div>
+      <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"> </script>
+      <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+      <script language="javascript"></script>
+      <script src="jquery-3.4.1.js"></script>
+      <script src="backend.js"></script>
       <div id="search" onClick="hidemenu();">
          <div>
             <a title="Google" href="https://www.google.com/">
